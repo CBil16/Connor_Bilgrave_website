@@ -8,7 +8,7 @@
   --primary-color: #4891ff;
   --light-color: #f4f4f6;
   --dark-color: #111;
-  --bg-color: hsl(49 37% 94%);
+  --bg-color: hsl(0, 0%, 100%);
   --typewriterSpeed: 3s;
   --typewriterCharacters: 24;
 }
@@ -440,6 +440,11 @@ pricing ul li i {
   place-content: center;
   text-align: center;
   background: var(--bg-color);
+  overflow-y: hidden;
+}
+
+.typeWriter::-webkit-scrollbar {
+  display: none;
 }
 
 .typeWriter h1 {
